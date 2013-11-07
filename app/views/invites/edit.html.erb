@@ -1,0 +1,8 @@
+<h1>RSVP Invite for <%= @invite.name %> </h1>
+<%= form_for @invite, url: {action: 'edit'} do |f| %>
+  <%= f.label :rsvp %>
+  <%= f.text_field :rsvp %>
+  <%= f.submit %>
+<% end %>
+
+<%= link_to "Back to Index", root_path %>

@@ -6,7 +6,8 @@ RsvpApp::Application.routes.draw do
   end
   root 'events#index'
  #resources :invites
-
+  get 'invites/:id/edit' => 'invites#edit'
+  patch 'invites/:id/edit' => 'invites#update'
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
   #
