@@ -1,0 +1,7 @@
+<h1>Create an invite for this event</h1>
+<%= form_for @invite, url: {action: 'create'} do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.submit %>
+<% end %>
+<%= link_to "Back to Index", events_path %>

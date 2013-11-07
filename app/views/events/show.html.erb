@@ -1,0 +1,7 @@
+<h1><%= @event.name %> </h1>
+<% raise %>
+<% @event.invites.each do |invite| %>
+  <%= invite.name %>
+ <%#= link_to invite.name, event_path(event.id) %><br>
+<% end %>
+<%= link_to "Create a new Invite", new_event_invite_path(@event.id) %>

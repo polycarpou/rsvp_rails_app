@@ -1,0 +1,8 @@
+<h1>These are the Parties that are going down</h1>
+<% @events.each do |event| %>
+  <%= link_to event.name, event_path(event.id) %><br>
+<% end %>
+
+<br>
+
+<%= link_to "Create your own party", new_event_path %>
